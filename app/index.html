@@ -142,7 +142,7 @@ function nav(v,b){document.querySelectorAll('.view').forEach(x=>x.classList.remo
 let dp=null;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e});
 function install(){if(dp){dp.prompt();return}$('#ovlIn').innerHTML=`<h2 style="margin-top:0">Instalar no celular</h2><p class="sub"><b>iPhone:</b> toque em Compartilhar (quadrado com seta) e depois em "Adicionar à Tela de Início".<br><br><b>Android:</b> toque nos 3 pontos do navegador e em "Adicionar à tela inicial" ou "Instalar app".</p><button class="btn" onclick="closeO()">Entendi</button>`;$('#ovl').classList.add('on')}
 if(matchMedia('(display-mode: standalone)').matches)document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('#inst').forEach(b=>b.style.display='none')});
-if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js',{scope:'/app'}).catch(()=>{});
 try{if(new URLSearchParams(location.search).get('welcome'))$('#welcome').classList.add('on');if(M.member)$('#banner').style.display='none'}catch(e){}
 $('#xp').textContent=(P.xp||0)+' XP';home();
 </script></body></html>
