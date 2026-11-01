@@ -236,7 +236,7 @@ function buildVsl(){const a=S.a;const v=CFG.vsl;S.start=Date.now();const ia=a.ia
  const wireMp4=()=>{const vid=$('#player video');if(!vid)return;vid.addEventListener('timeupdate',()=>{if(vid.currentTime>=ps-10)openPitch()});vid.addEventListener('ended',openPitch)};
  if(vt){const sc=document.createElement('script');sc.src=`https://scripts.converteai.net/${v.vturb.acc}/players/${vt}/v4/player.js`;sc.async=true;
   sc.onerror=()=>{$('#player').innerHTML=mp4;wireMp4()};document.head.appendChild(sc);
-  const el=$('#player vturb-smartplayer');el.addEventListener('player:ready',()=>{try{el.displayHiddenElements(ps-10,['#rmPitchTrig'],{persist:true})}catch(e){}});
+  const el=$('#player vturb-smartplayer');const armP=()=>{try{el.displayHiddenElements(ps-10,['#rmPitchTrig'],{persist:true})}catch(e){}};el.addEventListener('player:ready',armP);$('#player').addEventListener('click',()=>setTimeout(armP,800),{once:true});
   const iv=setInterval(()=>{const t=$('#rmPitchTrig');if(!t){clearInterval(iv);return}if(getComputedStyle(t).display!=='none'){clearInterval(iv);t.style.display='none';openPitch()}},500);
  }else wireMp4();
  setTimeout(openPitch,(ps+120)*1000);
