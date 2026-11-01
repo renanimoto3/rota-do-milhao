@@ -13,7 +13,8 @@ module.exports = async (req, res) => {
     hora: pad(now.getHours()) + ':' + pad(now.getMinutes()),
     email: email, origem: b.src || 'direto', conteudo: b.utm_content || b.utm_campaign || '',
     potencial: b.potencial || '', fase: b.fase || 1, status: 'Lead', data_compra: '',
-    dispositivo: b.dispositivo || '', ramo: b.ramo || '', lid: b.lid || '', produto: 'Rota do Milhao'
+    dispositivo: b.dispositivo || '', ramo: b.ramo || '', lid: b.lid || '', produto: 'Rota do Milhao',
+    idioma: b.idioma || 'PT', anuncio: b.utm_content || '', conjunto: b.utm_term || b.utm_medium || '', campanha: b.utm_campaign || '', etapa: b.etapa || '', pagina: b.page || ''
   };
   const jobs = [];
   const post = (url, headers, body) => fetch(url, { method: 'POST', headers: headers, body: JSON.stringify(body) }).catch(() => null);
