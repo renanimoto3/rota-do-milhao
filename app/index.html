@@ -4,11 +4,11 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta name="theme-color" content="#09090b">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Rota do Milhão">
 <title>Rota do Milhão | App</title>
-<link rel="icon" href="/img/icon-192.png"><link rel="apple-touch-icon" href="/img/icon-192.png"><link rel="manifest" href="/manifest.json">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/icon-192.png"><link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/icon-192.png"><link rel="manifest" href="/manifest.json">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','845624231314387');fbq('track','PageView');</script>
-<script id="cfg" type="application/json">{"checkout":{"vitalicio":"CHECKOUT_VITALICIO","mensal":"CHECKOUT_MENSAL","up1":"CHECKOUT_UP1","up2":"CHECKOUT_UP2","clube":"CHECKOUT_CLUBE"}}</script>
+<script id="cfg" type="application/json">{"checkout":{"vitalicio":"https://pay.cakto.com.br/xmrc75g_1268307","mensal":"https://pay.cakto.com.br/z34bqv5_1268318","up1":"CHECKOUT_UP1","up2":"CHECKOUT_UP2","clube":"CHECKOUT_CLUBE"}}</script>
 <style>
 :root{--bg:#09090b;--card:#141418;--line:#232329;--txt:#f4f1ea;--mut:#9a9aa3;--gold:#d4af37;--gold2:#f3dd8a;--gold3:#8f6f1c;--grad:linear-gradient(135deg,#f3dd8a,#d4af37 45%,#9c7a1f)}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;min-height:100dvh;line-height:1.45;padding-bottom:90px}
@@ -69,7 +69,7 @@ input[type=range]{padding:0;height:6px;-webkit-appearance:none;background:#2a2a3
 <div class="ovl" id="ovl"><div class="m" id="ovlIn"></div></div>
 <div class="nav"><button class="on" onclick="nav('home',this)"><span>🗺️</span>Rota</button><button onclick="nav('calc',this)"><span>🧮</span>Calculadora</button><button onclick="nav('conta',this)"><span>👤</span>Conta</button></div>
 <script>
-const CFG=JSON.parse(document.getElementById('cfg').textContent);const $=s=>document.querySelector(s);
+const IMG='https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/';const CFG=JSON.parse(document.getElementById('cfg').textContent);const $=s=>document.querySelector(s);
 const BRL=n=>'R$ '+Math.round(n).toLocaleString('pt-BR');
 let M={member:false,products:[]},P={};try{P=JSON.parse(localStorage.getItem('rm_prog')||'{}');M=JSON.parse(localStorage.getItem('rm_member')||'{"member":false,"products":[]}')}catch(e){}
 const save=()=>{try{localStorage.setItem('rm_prog',JSON.stringify(P))}catch(e){}};
@@ -131,7 +131,7 @@ const BON=[['Mapa dos 37 Serviços com IA','R$ 97','b1'],['Guia do Primeiro Clie
 function pitch(k){k=k||'front';const up={up1:['Fases 3 e 4: Investidor de Bolso + Rota do Milhão','O celular já gera. Agora o dinheiro trabalha: reserva, renda fixa, FIIs, ações e o simulador do milhão.','R$ 147','R$ 297'],up2:['Desafio 7 Dias com IA','Uma missão por dia, scripts de prospecção prontos e a meta do primeiro pagamento em 7 dias.','R$ 67','R$ 147'],clube:['Clube da Rota','Aula nova toda semana, novos serviços com IA, comunidade e suporte.','R$ 29,90/mês','R$ 59,90']}[k];
  $('#ovlIn').innerHTML=up?`<h2 style="margin-top:0">${up[0]}</h2><p class="sub">${up[1]}</p><p style="margin:12px 0"><s style="color:var(--mut)">${up[3]}</s> <span class="big">${up[2]}</span></p><button class="btn pulse" onclick="buy('${k}')">DESBLOQUEAR AGORA</button><button class="btn sec" style="margin-top:8px" onclick="closeO()">Agora não</button>`:
  `<h2 style="margin-top:0">Desbloqueie a rota completa</h2><p class="sub">Os 37 serviços, a Fase 2 (renda fixa em 60 dias) e os 7 bônus, no mesmo app, para sempre.</p>
- <div class="pile" style="margin:12px 0">${BON.map(b=>`<div class="it"><img src="/img/${b[2]}.webp" alt=""><div><b>${b[0]}</b></div><s>${b[1]}</s></div>`).join('')}</div>
+ <div class="pile" style="margin:12px 0">${BON.map(b=>`<div class="it"><img src="${IMG}${b[2]}.webp" alt=""><div><b>${b[0]}</b></div><s>${b[1]}</s></div>`).join('')}</div>
  <p style="text-align:center"><s style="color:var(--mut)">R$ 716</s></p>
  <div class="plans"><div class="plan best"><span class="rib">Liberado para o seu perfil</span><h3>Vitalício</h3><div class="pr"><s>R$ 297</s>R$ 97 <small>uma vez</small></div><button class="btn pulse" onclick="buy('vitalicio')">QUERO O VITALÍCIO POR R$ 97</button></div><div class="plan"><h3>Mensal</h3><div class="pr">R$ 47 <small>/mês</small></div><button class="btn sec" onclick="buy('mensal')">Prefiro o mensal</button></div></div>
  <p class="tiny">7 dias de garantia. Entra na hora com o e-mail da compra.</p><button class="btn sec" style="margin-top:8px" onclick="closeO()">Continuar no gratuito</button>`;
