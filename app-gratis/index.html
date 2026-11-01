@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta name="theme-color" content="#09090b">
+<title>Rota do Milhão | Seu app grátis está liberado</title>
+<link rel="icon" href="/img/icon-192.png"><link rel="manifest" href="/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','845624231314387');fbq('track','PageView');fbq('track','ViewContent',{content_name:'app-gratis'});</script>
+<style>
+:root{--bg:#09090b;--card:#141418;--line:#232329;--txt:#f4f1ea;--mut:#9a9aa3;--gold:#d4af37;--gold2:#f3dd8a;--gold3:#8f6f1c;--grad:linear-gradient(135deg,#f3dd8a,#d4af37 45%,#9c7a1f)}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;min-height:100dvh;line-height:1.45}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(800px 500px at 50% -10%,rgba(212,175,55,.18),transparent 60%);pointer-events:none}
+.wrap{position:relative;max-width:460px;margin:0 auto;padding:18px 18px 60px}
+h1{font-family:"Playfair Display",serif;font-size:29px;line-height:1.12}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.back{background:linear-gradient(135deg,rgba(212,175,55,.2),rgba(212,175,55,.05));border:1px solid var(--gold3);border-radius:14px;padding:12px 14px;font-size:14px;margin-bottom:16px;display:none}
+.back.on{display:block}
+.sub{color:var(--mut);font-size:15px;margin:10px 0 16px}
+.mock{border-radius:18px;overflow:hidden;aspect-ratio:3/4;background:#15151a;margin:0 0 16px;box-shadow:0 20px 60px rgba(0,0,0,.6)}.mock img{width:100%;height:100%;object-fit:cover;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.chip{font-size:12px;padding:7px 11px;border:1px solid var(--line);border-radius:99px;color:#d6d3cb}
+.pot{text-align:center;padding:14px;border:1px solid var(--gold3);border-radius:14px;background:var(--card);margin-bottom:16px}
+.pot small{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.08em;display:block}.pot b{font-family:"Playfair Display",serif;font-size:26px;color:var(--gold2)}
+input[type=email]{width:100%;padding:16px;border-radius:14px;border:1px solid var(--gold3);background:#0d0d10;color:var(--txt);font:inherit;font-size:16px;margin-bottom:10px;outline:0}
+input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,.2)}
+.btn{display:block;width:100%;padding:17px;border:0;border-radius:14px;background:var(--grad);color:#1a1405;font:inherit;font-weight:800;font-size:17px;cursor:pointer;box-shadow:0 10px 30px rgba(212,175,55,.35);animation:p 1.8s infinite}
+@keyframes p{50%{box-shadow:0 10px 40px rgba(212,175,55,.65)}}
+.tiny{color:var(--mut);font-size:12px;text-align:center;margin-top:12px}
+ul{list-style:none;margin:14px 0}li{padding:7px 0 7px 26px;position:relative;font-size:14.5px;color:#d6d3cb}li:before{content:"✦";position:absolute;left:4px;color:var(--gold)}
+.err{color:#ff8a8a;font-size:13px;display:none;margin-bottom:8px}
+</style></head>
+<body><div class="wrap">
+ <div class="back" id="back">🎉 <b>Antes de sair:</b> seu perfil foi aprovado para usar o app Rota do Milhão de graça. Só colocar o e-mail.</div>
+ <div class="tag" style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:var(--grad);color:#1a1405;margin-bottom:10px">Parabéns, acesso liberado</div>
+ <h1>Baixe o app <span class="gold">Rota do Milhão grátis</span> e comece a Fase 1 hoje</h1>
+ <p class="sub">Você já tem o seu número. Agora tem o app: os 3 primeiros serviços com IA, o passo a passo e a aula de onde achar o primeiro cliente, sem pagar nada.</p>
+ <div class="pot" id="pot" style="display:none"><small>Seu potencial</small><b id="potVal"></b></div>
+ <div class="mock"><img src="/img/app-mock.webp" alt=""></div>
+ <div class="chips"><span class="chip">Acesso grátis</span><span class="chip">Sem senha</span><span class="chip">Instala no celular</span></div>
+ <form onsubmit="return go(event)">
+  <div class="err" id="err">Digite um e-mail válido para liberar o app.</div>
+  <input type="email" id="em" placeholder="Seu melhor e-mail" autocomplete="email" required>
+  <button class="btn" type="submit" id="go">INSTALAR O APP GRÁTIS →</button>
+ </form>
+ <ul><li>Fase 1, módulo 1: 3 serviços com IA com prompts prontos</li><li>Aula: onde achar o primeiro cliente de graça</li><li>Calculadora com o seu resultado salvo</li></ul>
+ <p class="tiny">O acesso grátis libera o começo da rota. As Fases 2, 3 e 4 e os bônus se desbloqueiam dentro do app.</p>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+try{if(new URLSearchParams(location.search).get('from')==='back')$('#back').classList.add('on');const st=JSON.parse(localStorage.getItem('rm_state')||'null');if(st&&st.lo){$('#pot').style.display='block';$('#potVal').textContent='R$ '+st.lo.toLocaleString('pt-BR')+' a R$ '+st.hi.toLocaleString('pt-BR')+'/mês'}}catch(e){}
+function go(e){e.preventDefault();const em=$('#em').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){$('#err').style.display='block';return false}
+ $('#go').textContent='ABRINDO O APP…';
+ let t={},st={};try{t=JSON.parse(localStorage.getItem('rm_track')||'{}');st=JSON.parse(localStorage.getItem('rm_state')||'{}');localStorage.setItem('rm_email',em)}catch(x){}
+ const body={email:em,src:t.src||'direto',utm_content:t.utm_content||'',utm_campaign:t.utm_campaign||'',potencial:st.lo?st.lo+'-'+st.hi:'',fase:st.a&&st.a.ia==='muito'?2:1,dispositivo:(st.a&&st.a.cel)||'',ramo:(st.a&&st.a.ramo)||'',lid:localStorage.getItem('rm_lid')||'',page:location.href};
+ try{fbq('track','Lead',{content_name:'app-gratis'},{eventID:'lead_'+body.lid})}catch(x){}
+ try{navigator.sendBeacon?navigator.sendBeacon('/api/lead',new Blob([JSON.stringify(body)],{type:'application/json'})):fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),keepalive:true})}catch(x){}
+ setTimeout(()=>location.href='/app?welcome=1',350);return false}
+</script></body></html>
