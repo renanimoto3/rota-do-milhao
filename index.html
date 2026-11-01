@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#09090b">
+<title>Rota do Milhão | Raio-X do seu potencial com o celular</title>
+<link rel="icon" href="/img/icon-192.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','845624231314387');fbq('track','PageView');
+</script>
+<script id="cfg" type="application/json">
+{
+ "pixel":"845624231314387",
+ "vsl":{"vturb":"", "pitchSeconds":230},
+ "checkout":{"vitalicio":"CHECKOUT_VITALICIO","mensal":"CHECKOUT_MENSAL"},
+ "config":{"tempo":{"30":1,"60":2,"120":3.5,"240":6},"ia":{"nunca":0.7,"basico":1,"muito":1.3},
+   "ramo":{"servicos":[80,150],"vender":[40,90],"conteudo":[300,900],"investir":[80,150]},
+   "diasUteis":22,"entregasPorHora":0.45}
+}
+</script>
+<style>
+:root{--bg:#09090b;--bg2:#101013;--card:#141418;--line:#232329;--txt:#f4f1ea;--mut:#9a9aa3;--gold:#d4af37;--gold2:#f3dd8a;--gold3:#8f6f1c;--grad:linear-gradient(135deg,#f3dd8a 0%,#d4af37 45%,#9c7a1f 100%);--r:18px;--sh:0 20px 60px rgba(0,0,0,.6)}
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;min-height:100dvh;overflow-x:hidden;line-height:1.45}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(900px 500px at 50% -10%,rgba(212,175,55,.16),transparent 60%),radial-gradient(600px 400px at 100% 100%,rgba(212,175,55,.07),transparent 60%);pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1;max-width:460px;margin:0 auto;padding:14px 18px 120px;min-height:100dvh}
+h1,h2,.serif{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.01em}
+h1{font-size:30px;line-height:1.12;font-weight:700}h2{font-size:24px;line-height:1.15;font-weight:700}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.top{display:flex;align-items:center;justify-content:space-between;padding:6px 0 14px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:.14em;font-size:11px;text-transform:uppercase;color:var(--gold2)}
+.logo i{width:22px;height:22px;border-radius:7px;background:var(--grad);display:inline-block;box-shadow:0 0 18px rgba(212,175,55,.5)}
+.step{font-size:11px;color:var(--mut);letter-spacing:.08em;text-transform:uppercase}
+.bar{height:5px;border-radius:9px;background:#1c1c22;overflow:hidden;margin-bottom:22px}
+.bar i{display:block;height:100%;width:6%;background:var(--grad);border-radius:9px;transition:width .6s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 14px rgba(212,175,55,.6)}
+.screen{display:none;animation:in .45s cubic-bezier(.2,.8,.2,1)}.screen.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero{border-radius:var(--r);overflow:hidden;aspect-ratio:3/2;background:#15151a;margin:0 0 18px;box-shadow:var(--sh);position:relative}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(9,9,11,.85))}
+.sub{color:var(--mut);font-size:15px;margin:10px 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.chip{font-size:12px;padding:7px 11px;border:1px solid var(--line);border-radius:99px;color:#d6d3cb;background:rgba(255,255,255,.02)}
+.chip b{color:var(--gold2)}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;padding:15px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);text-align:left;color:var(--txt);font:inherit;font-size:16px;font-weight:500;cursor:pointer;transition:transform .15s,border-color .15s,background .15s;width:100%}
+.opt:active{transform:scale(.985)}
+.opt .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#1b1b21;font-size:20px;flex:none}
+.opt.sel{border-color:var(--gold);background:linear-gradient(135deg,rgba(212,175,55,.14),rgba(212,175,55,.04))}
+.opt small{display:block;color:var(--mut);font-size:12.5px;font-weight:400;margin-top:2px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:17px 18px;border:0;border-radius:14px;background:var(--grad);color:#1a1405;font:inherit;font-weight:800;font-size:17px;cursor:pointer;box-shadow:0 10px 30px rgba(212,175,55,.35),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .15s}
+.btn:active{transform:scale(.98)}.btn.pulse{animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(212,175,55,.35)}50%{box-shadow:0 10px 40px rgba(212,175,55,.65)}}
+.btn.sec{background:transparent;color:var(--gold2);border:1px solid var(--gold3);box-shadow:none}
+.fb{margin-top:14px;padding:14px 16px;border-left:3px solid var(--gold);background:rgba(212,175,55,.07);border-radius:0 12px 12px 0;font-size:14.5px;color:#e8e3d6;display:none}
+.fb.on{display:block;animation:in .4s}
+.pot{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:460px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(9,9,11,0),rgba(9,9,11,.96) 30%);z-index:5;display:none}
+.pot.on{display:block}
+.pot .box{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-radius:14px;background:var(--card);border:1px solid var(--gold3);box-shadow:0 0 30px rgba(212,175,55,.18)}
+.pot small{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.08em;display:block}
+.pot b{font-family:"Playfair Display",serif;font-size:22px;color:var(--gold2)}
+.pot .up{color:#6ee7a0;font-weight:700;font-size:13px}
+.slider{margin:12px 0 22px}
+.slider .val{font-family:"Playfair Display",serif;font-size:40px;text-align:center;color:var(--gold2);margin-bottom:10px}
+input[type=range]{width:100%;-webkit-appearance:none;height:6px;border-radius:9px;background:linear-gradient(90deg,var(--gold) var(--p,30%),#2a2a31 var(--p,30%));outline:0}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--grad);border:3px solid #fff3;box-shadow:0 0 18px rgba(212,175,55,.7)}
+.lbl{display:flex;justify-content:space-between;color:var(--mut);font-size:12px;margin-top:8px}
+.load{text-align:center;padding:30px 0}
+.ring{width:130px;height:130px;margin:0 auto 22px;border-radius:50%;background:conic-gradient(var(--gold) var(--a,0deg),#1c1c22 0);display:grid;place-items:center;position:relative}
+.ring:after{content:"";position:absolute;inset:10px;border-radius:50%;background:var(--bg)}
+.ring b{position:relative;font-family:"Playfair Display",serif;font-size:30px;color:var(--gold2)}
+.ck{list-style:none;text-align:left;margin:0 auto;max-width:330px}
+.ck li{padding:9px 0;border-bottom:1px solid var(--line);color:var(--mut);display:flex;gap:10px;align-items:center;opacity:.35;transition:.4s}
+.ck li.ok{opacity:1;color:var(--txt)}.ck li.ok:before{content:"✓";color:var(--gold);font-weight:800}
+.ck li:before{content:"○";color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:14px}
+.card.gold{border-color:var(--gold3);background:linear-gradient(160deg,rgba(212,175,55,.14),rgba(20,20,24,.9));box-shadow:0 0 40px rgba(212,175,55,.15)}
+.big{font-family:"Playfair Display",serif;font-size:36px;line-height:1.05;color:var(--gold2)}
+.tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:var(--grad);color:#1a1405;margin-bottom:10px}
+.row{display:flex;gap:10px}
+.kpi{flex:1;background:#0d0d10;border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi small{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em;display:block}
+.kpi b{font-size:18px;color:var(--txt)}
+.fase{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.fase:last-child{border:0}
+.fase .n{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:800;background:#1b1b21;color:var(--gold2);flex:none;border:1px solid var(--gold3)}
+.fase.cur .n{background:var(--grad);color:#1a1405}
+.fase b{display:block}.fase span{color:var(--mut);font-size:13px}
+.serv{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:#0d0d10}
+.serv b{font-size:14.5px}.serv small{color:var(--mut);display:block;font-size:12px}
+.serv em{font-style:normal;color:var(--gold2);font-weight:800;white-space:nowrap}
+.vslbox{border-radius:var(--r);overflow:hidden;background:#000;aspect-ratio:3/4;position:relative;box-shadow:var(--sh);margin-bottom:12px}
+.vslbox iframe,.vslbox video,.vslbox vturb-smartplayer{width:100%;height:100%;display:block;border:0}
+.snd{text-align:center;color:var(--gold2);font-size:13px;margin-bottom:16px;font-weight:600}
+#pitch{display:none}#pitch.on{display:block;animation:in .6s}
+.pitch h2{margin:28px 0 10px}.pitch p{color:#d6d3cb;margin:0 0 12px;font-size:15.5px}
+.pitch .q{font-family:"Playfair Display",serif;font-size:20px;color:var(--gold2);font-style:italic;margin:18px 0}
+.pile{display:grid;gap:10px;margin:14px 0}
+.pile .it{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.pile .it img{width:62px;height:62px;border-radius:10px;object-fit:cover;background:#1b1b21;flex:none}
+.pile .it b{display:block;font-size:14.5px}.pile .it small{display:block;color:var(--mut);font-size:12px}
+.pile .it s{color:var(--mut);font-size:12px;white-space:nowrap}
+.plans{display:grid;gap:12px;margin:14px 0 8px}
+.plan{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:var(--card);position:relative}
+.plan.best{border-color:var(--gold);background:linear-gradient(160deg,rgba(212,175,55,.18),rgba(20,20,24,1));box-shadow:0 0 40px rgba(212,175,55,.22)}
+.plan .rib{position:absolute;top:-11px;left:16px;background:var(--grad);color:#1a1405;font-size:10.5px;font-weight:800;letter-spacing:.1em;padding:5px 10px;border-radius:7px;text-transform:uppercase}
+.plan h3{font-size:18px;margin:6px 0 2px}
+.plan .pr{font-family:"Playfair Display",serif;font-size:40px;color:var(--gold2);line-height:1}.plan .pr small{font-size:14px;color:var(--mut);font-family:Inter}
+.plan .pr s{font-size:18px;color:var(--mut);margin-right:8px}
+.plan ul{list-style:none;margin:12px 0 14px;font-size:14px;color:#d6d3cb}.plan li{padding:4px 0 4px 22px;position:relative}.plan li:before{content:"✦";position:absolute;left:0;color:var(--gold)}
+.gar{display:flex;gap:12px;align-items:center;padding:14px;border:1px dashed var(--gold3);border-radius:14px;margin:16px 0;background:rgba(212,175,55,.05)}
+.gar .ic{font-size:30px}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}.faq summary{cursor:pointer;font-weight:600;list-style:none}.faq p{margin-top:8px;font-size:14px}
+.fixcta{position:fixed;left:0;right:0;bottom:0;padding:10px 18px calc(10px + env(safe-area-inset-bottom));background:rgba(9,9,11,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);z-index:6;display:none}
+.fixcta.on{display:block}.fixcta .btn{padding:14px;font-size:15px}
+.ovl{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;padding:16px;z-index:9999;box-sizing:border-box}
+.ovl.on{display:flex}.ovl .m{background:var(--card);border:1px solid var(--gold3);border-radius:var(--r);padding:22px;max-width:420px;width:100%;max-height:88dvh;overflow:auto}
+.tiny{color:var(--mut);font-size:12px;text-align:center;margin-top:20px}
+.pix{position:fixed;top:10px;right:10px;font-size:10px;color:#333}
+.auth{display:flex;gap:12px;align-items:center;margin:0 0 18px;padding:12px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.auth img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.auth b{display:block;font-size:14px}.auth span{font-size:12.5px;color:var(--mut)}
+.luxe{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}
+.luxe div{aspect-ratio:1;border-radius:12px;overflow:hidden;background:#15151a}.luxe img{width:100%;height:100%;object-fit:cover}
+.timeline{position:relative;padding-left:24px;margin:10px 0}
+.timeline:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--gold),#2a2a31)}
+.timeline .t{position:relative;padding:6px 0 12px}
+.timeline .t:before{content:"";position:absolute;left:-21px;top:11px;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 12px rgba(212,175,55,.8)}
+.timeline b{color:var(--gold2)}.timeline span{display:block;color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="top"><div class="logo"><i></i>Rota do Milhão</div><div class="step" id="stepLbl">Raio-X gratuito</div></div>
+ <div class="bar" id="bar"><i></i></div>
+ <div id="screens"></div>
+</div>
+<div class="pot" id="pot"><div class="box"><div><small>Seu potencial parcial</small><b id="potVal">R$ 0</b></div><div class="up" id="potUp">calculando…</div></div></div>
+<div class="fixcta" id="fixcta"><button class="btn pulse" onclick="goPlans()">QUERO MINHA ROTA POR R$ 97</button></div>
+<div class="ovl" id="ovl"><div class="m" id="ovlIn"></div></div>
+<script>
+const CFG=JSON.parse(document.getElementById('cfg').textContent);
+const $=s=>document.querySelector(s);const S={i:0,a:{},pot:0,start:0,pitch:false};
+const BRL=n=>'R$ '+Math.round(n).toLocaleString('pt-BR');
+try{const u=new URLSearchParams(location.search);const keep={};['src','utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','sck'].forEach(k=>{if(u.get(k))keep[k]=u.get(k)});
+ if(!keep.src){const r=document.referrer||'';keep.src=/instagram/.test(r)?'ig':/tiktok/.test(r)?'tt':/youtube|youtu\.be/.test(r)?'ys':/facebook|fb\./.test(r)?'fb':(localStorage.getItem('rm_src')||'direto')}
+ if(!localStorage.getItem('rm_lid'))localStorage.setItem('rm_lid',Math.random().toString(36).slice(2)+Date.now().toString(36));
+ Object.assign(keep,JSON.parse(localStorage.getItem('rm_track')||'{}'),keep);localStorage.setItem('rm_track',JSON.stringify(keep));localStorage.setItem('rm_src',keep.src);
+ document.cookie='rm_src='+keep.src+';max-age=2592000;path=/';
+ if(u.get('reset'))localStorage.removeItem('rm_state');}catch(e){}
+const track=()=>{try{return JSON.parse(localStorage.getItem('rm_track')||'{}')}catch(e){return{}}};
+function ck(url){const t=track();const q=new URLSearchParams();['src','utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','sck'].forEach(k=>{if(t[k])q.set(k,t[k])});if(!q.get('utm_source'))q.set('utm_source',t.src||'direto');q.set('utm_medium','organico');return url+(url.includes('?')?'&':'?')+q.toString()}
+const vib=()=>{try{navigator.vibrate&&navigator.vibrate(12)}catch(e){}}
+/* ===== TELAS ===== */
+const STEPS=[
+{id:'intro',pct:6,html:`
+ <div class="hero"><img src="/img/01-intro.webp" alt="" fetchpriority="high"></div>
+ <h1>Descubra quanto você pode ganhar <span class="gold">por mês só com o celular</span></h1>
+ <p class="sub">Um Raio-X de 3 minutos cruza seu tempo livre, seu celular e seu nível com IA e mostra a faixa real que está escapando por mês. Sem cadastro, sem cartão.</p>
+ <div class="chips"><span class="chip"><b>3 min</b> para terminar</span><span class="chip"><b>Grátis</b> e sem cadastro</span><span class="chip">Funciona em <b>qualquer celular</b></span></div>
+ <button class="btn pulse" onclick="next()">COMEÇAR MEU RAIO-X →</button>
+ <p class="tiny">No fim você vê seu número e a fase exata por onde começar.</p>`},
+{id:'situacao',pct:16,q:'Hoje, qual é a sua situação?',opts:[['💼','Trabalho CLT','e sobra pouco no fim do mês'],['🧭','Autônomo ou freela','renda que sobe e desce'],['🎓','Estudante','quero dinheiro sem largar os estudos'],['🔍','Sem trabalho fixo agora','preciso de uma entrada rápida']],
+ fb:['Quem é CLT tem o melhor cenário: salário fixo paga as contas, o celular paga a vida que você quer.','Autônomo já sabe vender. Falta só a parte que a IA faz por você em minutos.','Estudante com celular na mão é quem mais rápido domina as ferramentas de IA. Você está na frente.','Então o foco é a Fase 1: primeiro dinheiro em até 7 dias. É exatamente por aí que a rota começa.']},
+{id:'ganha',pct:26,type:'slider',q:'Quanto você ganha hoje por mês?',min:0,max:10000,step:250,val:2000,fmt:v=>v>=10000?'R$ 10.000+':BRL(v),lbl:['R$ 0','R$ 10 mil+'],key:'ganha'},
+{id:'quer',pct:36,type:'slider',q:'Quanto a mais você quer ganhar por mês?',min:500,max:20000,step:500,val:3000,fmt:v=>v>=20000?'R$ 20.000+':BRL(v),lbl:['R$ 500','R$ 20 mil+'],key:'quer',pot:true},
+{id:'tempo',pct:46,q:'Quanto tempo livre você tem por dia?',opts:[['⏱️','30 minutos','no ônibus, no almoço, antes de dormir'],['🕐','1 hora','dá para fazer 1 entrega por dia'],['🕑','2 horas','ritmo de renda fixa em 60 dias'],['🚀','4 horas ou mais','ritmo de substituir o salário']],key:'tempo',vals:['30','60','120','240'],
+ fb:['30 minutos por dia já pagam a Fase 1. A IA faz em 4 minutos o que levaria uma tarde.','1 hora por dia é o ritmo exato de quem fecha o primeiro cliente na primeira semana.','Com 2 horas você entra direto na Fase 2: clientes fixos e renda que repete todo mês.','Com 4 horas a conta muda de patamar. Isso é ritmo de quem sai do CLT.'],pot:true},
+{id:'cel',pct:54,q:'Qual celular você tem?',opts:[['🤖','Android','qualquer modelo'],['🍎','iPhone','qualquer modelo'],['📱','Os dois','ou tenho tablet também']],key:'cel',vals:['Android','iPhone','Ambos'],
+ fb:['Perfeito. 100% da rota roda no Android, inclusive nos mais simples.','Perfeito. 100% da rota roda no iPhone, sem instalar nada pesado.','Melhor ainda: você consegue produzir em um e atender no outro.']},
+{id:'ia',pct:62,q:'Você já usou inteligência artificial?',opts:[['🌱','Nunca usei','não sei nem por onde começar'],['💬','Já usei o ChatGPT','mas só para curiosidade'],['⚡','Uso bastante','quero ganhar dinheiro com isso']],key:'ia',vals:['nunca','basico','muito'],
+ fb:['Ótimo. Quem nunca usou chega sem vício e aprende o jeito que paga. Você começa pela Fase 1 guiada.','Você já tem a base. Falta transformar curiosidade em serviço cobrado.','Então sua Fase 1 dura dias, não semanas. Vamos direto para o dinheiro.'],pot:true},
+{id:'ramo',pct:70,q:'O que mais combina com você?',opts:[['🛠️','Prestar serviços','legendas, artes, textos, edições'],['🛍️','Vender coisas','produtos e ofertas no celular'],['🎬','Criar conteúdo','vídeos e perfis que viram dinheiro'],['📈','Investir e multiplicar','fazer o dinheiro trabalhar']],key:'ramo',vals:['servicos','vender','conteudo','investir'],
+ fb:['Serviços com IA é a porta mais rápida: paga por entrega e tem cliente em todo bairro.','Vender com o celular funciona, e a IA escreve o anúncio que converte por você.','Conteúdo é o ramo que mais escala. A IA roteiriza, corta e legenda. Você só aparece se quiser.','Investir é a Fase 3 da rota. Antes, o celular gera o capital. Vou te mostrar as duas partes.'],pot:true},
+{id:'trava',pct:78,q:'O que mais te travou até hoje?',opts:[['🧩','Não sei por onde começar','tanta coisa que eu paraliso'],['⏳','Falta de tempo','dia já é corrido'],['🚫','Medo de golpe','já vi muita promessa vazia'],['💸','Não tenho dinheiro para investir','preciso começar do zero']],key:'trava',vals:['comeco','tempo','golpe','dinheiro'],
+ fb:['É a trava mais comum. Por isso a rota é por fases: só uma coisa de cada vez.','Por isso a Fase 1 foi feita para caber em 30 minutos. Nada de curso de 40 horas.','Por isso aqui não tem promessa de ficar rico dormindo: tem serviço, cliente e pagamento.','Zero investimento. Todas as ferramentas da Fase 1 são gratuitas.']},
+{id:'desafio',pct:86,q:'Mini desafio: qual destas legendas foi feita por IA?',sub:'Responda por instinto. Vale pontos.',opts:[['A','"Chegou o combo do fim de semana: pizza grande + refri por R$ 49,90. Só até domingo!"',''],['B','"combo fds pizza g + refri 49,90 ate domingo"','']],key:'desafio',vals:['A','B'],
+ fb:['Acertou. E esse é o ponto: a IA escreveu em 4 segundos uma legenda que uma pizzaria pagaria R$ 80 para ter. Você acabou de ver um serviço acontecendo.','Era a A. E repara: a IA escreveu em 4 segundos uma legenda que uma pizzaria pagaria R$ 80 para ter. Em 1 semana você faz isso de olhos fechados.']},
+{id:'loading',pct:94},
+{id:'result',pct:100},
+{id:'vsl',pct:100}
+];
+function render(){const box=$('#screens');box.innerHTML='';STEPS.forEach((s,i)=>{const d=document.createElement('section');d.className='screen';d.id='s_'+s.id;d.innerHTML=s.html||buildQ(s,i);box.appendChild(d)});show(S.i)}
+function buildQ(s,i){if(s.id==='loading')return `<div class="load"><div class="ring" id="ring"><b id="ringN">0%</b></div><h2>Cruzando suas respostas…</h2><p class="sub" id="loadTxt">Comparando seu tempo com 37 serviços possíveis</p><ul class="ck" id="ck"><li>Seu tempo livre e seu celular</li><li>Nível atual com IA</li><li>37 serviços que pagam por entrega</li><li>Clientes disponíveis no seu ramo</li><li>Montando sua rota em fases</li></ul></div>`;
+ if(s.id==='result')return `<div id="resultBox"></div>`;
+ if(s.id==='vsl')return `<div id="vslBox"></div>`;
+ if(s.type==='slider')return `<h2>${s.q}</h2><div class="slider"><div class="val" id="v_${s.id}">${s.fmt(s.val)}</div><input type="range" min="${s.min}" max="${s.max}" step="${s.step}" value="${s.val}" oninput="slide('${s.id}',this)"><div class="lbl"><span>${s.lbl[0]}</span><span>${s.lbl[1]}</span></div></div><button class="btn" onclick="ans('${s.id}',document.querySelector('#s_${s.id} input').value)">CONTINUAR →</button>`;
+ return `<h2>${s.q}</h2>${s.sub?`<p class="sub">${s.sub}</p>`:''}<div class="opts">${s.opts.map((o,j)=>`<button class="opt" onclick="pick('${s.id}',${j},this)"><span class="ic">${o[0]}</span><span>${o[1]}${o[2]?`<small>${o[2]}</small>`:''}</span></button>`).join('')}</div><div class="fb" id="fb_${s.id}"></div>`}
+function show(i){S.i=i;document.querySelectorAll('.screen').forEach(e=>e.classList.remove('on'));const s=STEPS[i];$('#s_'+s.id).classList.add('on');$('#bar i').style.width=s.pct+'%';$('#stepLbl').textContent=i===0?'Raio-X gratuito':i>=10?'Resultado':'Pergunta '+i+' de 9';window.scrollTo({top:0});save();
+ try{fbq('trackCustom','QuizStep',{step:s.id})}catch(e){}
+ if(s.id==='loading')runLoad();if(s.id==='result')buildResult();if(s.id==='vsl')buildVsl();
+ $('#pot').classList.toggle('on',i>=3&&i<=9&&S.pot>0)}
+function next(){show(S.i+1)}
+function slide(id,el){const s=STEPS.find(x=>x.id===id);el.style.setProperty('--p',((el.value-s.min)/(s.max-s.min)*100)+'%');$('#v_'+id).textContent=s.fmt(+el.value)}
+function ans(id,v){const s=STEPS.find(x=>x.id===id);S.a[s.key||id]=v;vib();calc();if(s.pot)bump();setTimeout(next,s.pot?700:150)}
+function pick(id,j,el){const s=STEPS.find(x=>x.id===id);document.querySelectorAll('#s_'+id+' .opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');S.a[s.key||id]=s.vals?s.vals[j]:j;vib();const fb=$('#fb_'+id);fb.textContent=s.fb[j];fb.classList.add('on');calc();if(s.pot)bump();setTimeout(next,2300)}
+function calc(){const c=CFG.config,a=S.a;const t=c.tempo[a.tempo||'60'],ia=c.ia[a.ia||'basico'],r=c.ramo[a.ramo||'servicos'];const h={30:.5,60:1,120:2,240:4}[a.tempo||'60'];
+ const lo=h*c.entregasPorHora*r[0]*c.diasUteis*ia*0.85,hi=h*c.entregasPorHora*r[1]*c.diasUteis*ia*1.15;S.lo=Math.max(600,Math.round(lo/50)*50);S.hi=Math.max(S.lo+800,Math.round(hi/50)*50);S.pot=S.hi}
+function bump(){const p=$('#potVal'),prev=+(p.dataset.v||0);const to=S.pot;$('#pot').classList.add('on');const st=performance.now();(function f(n){const k=Math.min(1,(n-st)/700);p.textContent=BRL(prev+(to-prev)*k);if(k<1)requestAnimationFrame(f)})(st);p.dataset.v=to;$('#potUp').textContent=to>prev?'▲ +'+BRL(to-prev):'atualizado'}
+function save(){try{localStorage.setItem('rm_state',JSON.stringify({i:S.i,a:S.a,lo:S.lo,hi:S.hi,pot:S.pot}))}catch(e){}}
+function runLoad(){const t=['Comparando seu tempo com 37 serviços possíveis','Procurando clientes no ramo que você escolheu','Ajustando pelo seu nível com IA','Calculando sua faixa mensal','Montando sua rota em 4 fases'];let i=0;const li=document.querySelectorAll('#ck li');const iv=setInterval(()=>{i++;if(i>5){clearInterval(iv);next();return}$('#ring').style.setProperty('--a',(i*72)+'deg');$('#ringN').textContent=(i*20)+'%';$('#loadTxt').textContent=t[Math.min(i,4)];li[i-1]&&li[i-1].classList.add('ok');vib()},1300)}
+const FASE={nunca:1,basico:1,muito:2};const RAMO={servicos:'Serviços com IA',vender:'Vendas pelo celular',conteudo:'Criação de conteúdo',investir:'Serviços com IA (gera o capital) + Fase 3'};
+const SERV={servicos:[['Legendas para negócios locais','pacote de 10 legendas','R$ 80 a 150'],['Artes para Instagram','3 artes com IA','R$ 90 a 150'],['Texto de anúncio','1 campanha pronta','R$ 100 a 150']],vender:[['Anúncio que converte','copy + arte com IA','R$ 40 a 90 de margem'],['Loja no WhatsApp','catálogo pronto em 1 h','R$ 60 a 90 por venda'],['Revenda com IA','descrição + foto editada','R$ 40 a 80']],conteudo:[['Roteiros de Reels','5 roteiros por semana','R$ 300 a 600/mês por cliente'],['Edição com legendas','vídeo cortado e legendado','R$ 60 a 120 por vídeo'],['Gestão de perfil local','posts da semana','R$ 400 a 900/mês']],investir:[['Legendas para negócios locais','gera o capital da Fase 3','R$ 80 a 150'],['Artes para Instagram','3 artes com IA','R$ 90 a 150'],['Plano de aportes','Fase 3 da rota','a partir de R$ 100/mês']]};
+function buildResult(){const a=S.a,f=FASE[a.ia]||1,quer=+(a.quer||3000),ganha=+(a.ganha||0);const anos=Math.max(4,Math.min(12,Math.round(1000000/((S.hi*0.5)*12)/1.8)));
+ $('#resultBox').innerHTML=`<div class="tag">Seu Raio-X está pronto</div>
+ <h1>Seu potencial é de <span class="gold">${BRL(S.lo)} a ${BRL(S.hi)}</span> por mês</h1>
+ <p class="sub">Só com o celular, ${{30:'30 minutos',60:'1 hora',120:'2 horas',240:'4 horas'}[a.tempo||'60']} por dia e ferramentas gratuitas. ${quer<=S.hi?'Isso cobre os '+BRL(quer)+' a mais que você pediu.':'Isso é o começo. Os '+BRL(quer)+' que você pediu entram na Fase 2.'}</p>
+ <div class="card gold"><div class="row"><div class="kpi"><small>Você hoje</small><b>${BRL(ganha)}</b></div><div class="kpi"><small>Faixa alta da rota</small><b style="color:var(--gold2)">${BRL(ganha+S.hi)}</b></div></div>
+ <p style="margin-top:12px;font-size:14px;color:#d6d3cb">Fase de partida: <b style="color:var(--gold2)">Fase ${f} · ${f===1?'Primeiro Dinheiro em 7 dias':'Renda Fixa em 60 dias'}</b><br>Ramo: <b>${RAMO[a.ramo]||'Serviços com IA'}</b></p></div>
+ <div class="card"><h2 style="font-size:19px">Seus 3 primeiros serviços</h2><p class="sub" style="font-size:13px;margin:6px 0 12px">Os que mais pagam para o seu tempo e o seu nível.</p>${(SERV[a.ramo]||SERV.servicos).map(s=>`<div class="serv"><div><b>${s[0]}</b><small>${s[1]}</small></div><em>${s[2]}</em></div>`).join('')}</div>
+ <div class="card"><h2 style="font-size:19px">Sua rota até o milhão</h2><div class="timeline">
+ <div class="t"><b>Fase 1 · Primeiro Dinheiro</b><span>7 dias: primeiro pagamento no celular</span></div>
+ <div class="t"><b>Fase 2 · Renda Fixa</b><span>60 dias: ${BRL(S.lo)} a ${BRL(S.hi)} todo mês</span></div>
+ <div class="t"><b>Fase 3 · Multiplicação</b><span>o celular gera, o dinheiro trabalha</span></div>
+ <div class="t"><b>Fase 4 · Rota do Milhão</b><span>no seu ritmo, cerca de ${anos} anos</span></div></div></div>
+ <div class="card" style="text-align:center;border-color:var(--gold3)"><div class="tag">Compatibilidade com o método: ${a.ia==='muito'?'98':a.ia==='basico'?'96':'94'}%</div><p style="font-size:14.5px;color:#d6d3cb">Perfis assim recebem uma condição especial no fim do vídeo. Assista até o final.</p></div>
+ <button class="btn pulse" onclick="next()">VER MINHA ROTA COMPLETA (VÍDEO) →</button>
+ <p class="tiny">3 a 5 minutos. Mostra como funciona cada fase dentro do app.</p>`;$('#pot').classList.remove('on')}
+function buildVsl(){const a=S.a;const v=CFG.vsl;S.start=Date.now();
+ $('#vslBox').innerHTML=`<h2 style="margin-bottom:8px">Sua rota de <span class="gold">${BRL(S.lo)} a ${BRL(S.hi)}/mês</span> começa aqui</h2>
+ <div class="snd">🔊 Toque no vídeo para ativar o som</div>
+ <div class="vslbox" id="player">${v.vturb?v.vturb:`<video playsinline controls poster="/img/vsl-poster.webp" src="/video/vsl.mp4"></video>`}</div>
+ <div id="pitch" class="pitch"></div>`;
+ try{fbq('track','ViewContent',{content_name:'vsl'})}catch(e){}
+ buildPitch();
+ const wait=Math.max(1000,(v.pitchSeconds-10)*1000);setTimeout(openPitch,wait);
+ $('#player').addEventListener('click',armBack,{once:true});$('#player').addEventListener('touchstart',armBack,{once:true});
+ if(localStorage.getItem('rm_pitch')==='1')openPitch();}
+function openPitch(){if(S.pitch)return;S.pitch=true;$('#pitch').classList.add('on');$('#fixcta').classList.add('on');try{localStorage.setItem('rm_pitch','1')}catch(e){};try{window.smartplayer&&window.smartplayer.instances&&window.smartplayer.instances[0]&&window.smartplayer.instances[0].displayHiddenElements&&window.smartplayer.instances[0].displayHiddenElements(0,['#pitch'])}catch(e){}}
+function armBack(){try{history.pushState({rm:1},'',location.href)}catch(e){}}
+window.addEventListener('popstate',()=>{try{if(S.pitch&&!sessionStorage.getItem('rm_back')){sessionStorage.setItem('rm_back','1');location.replace('/app-gratis?from=back')}}catch(e){}});
+function goPlans(){$('#planos').scrollIntoView({behavior:'smooth',block:'start'})}
+function buy(plan){const url=ck(CFG.checkout[plan]);const eid='ic_'+Date.now();try{fbq('track','InitiateCheckout',{content_name:plan,value:plan==='vitalicio'?97:47,currency:'BRL'},{eventID:eid})}catch(e){}setTimeout(()=>location.href=url,250)}
+function mensal(){$('#ovlIn').innerHTML=`<div class="tag">Antes de escolher o mensal</div><h2 style="font-size:21px">Por R$ 50 a mais, a rota é sua para sempre</h2><p class="sub" style="font-size:14px">No mensal você paga R$ 47 todo mês. Em 3 meses já pagou mais que o vitalício e ainda perde o acesso quando parar. Seu perfil liberou o vitalício de R$ 297 por R$ 97, uma vez só, com todas as atualizações.</p><button class="btn pulse" onclick="buy('vitalicio')">QUERO O VITALÍCIO POR R$ 97</button><button class="btn sec" style="margin-top:10px" onclick="buy('mensal')">Prefiro o mensal de R$ 47</button></div>`;$('#ovl').classList.add('on');document.body.style.overflow='hidden'}
+$('#ovl').addEventListener('click',e=>{if(e.target.id==='ovl'){$('#ovl').classList.remove('on');document.body.style.overflow=''}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#ovl').classList.remove('on');document.body.style.overflow=''}});
+const BONUS=[['Mapa dos 37 Serviços com IA','o que fazer, para quem e quanto cobrar','R$ 97','b1'],['Guia do Primeiro Cliente em 48h','onde achar cliente de graça e o que dizer','R$ 67','b2'],['Tabela de Preços 2026','nunca mais cobrar barato demais','R$ 47','b3'],['Scripts de Cobrança e Fechamento','a mensagem exata que fecha e recebe','R$ 47','b4'],['Biblioteca de IAs Gratuitas','todas as ferramentas da Fase 1, sem pagar nada','R$ 37','b5'],['Calculadora da Rota','sua meta, seus aportes, seu prazo até o milhão','R$ 97','b6'],['Checklist Diário com XP','a rotina de 30 min que mantém a rota viva','R$ 27','b7']];
+function buildPitch(){const a=S.a;$('#pitch').innerHTML=`
+ <button class="btn pulse" onclick="goPlans()">QUERO MINHA ROTA POR R$ 97</button>
+ <div class="chips" style="justify-content:center;margin-top:10px"><span class="chip">Acesso imediato</span><span class="chip">7 dias de garantia</span><span class="chip">Pagamento único</span></div>
+ <h2>Você viu o seu número: <span class="gold">${BRL(S.lo)} a ${BRL(S.hi)} por mês</span></h2>
+ <p>Esse número não é promessa. É o que sobra quando você junta três coisas que já tem: um celular, ${ {30:'30 minutos',60:'1 hora',120:'2 horas',240:'4 horas'}[a.tempo||'60'] } por dia e a inteligência artificial fazendo o trabalho pesado.</p>
+ <p>O que falta é a ordem certa. E é isso que a Rota do Milhão entrega: uma trilha em 4 fases que destrava uma de cada vez, começando pelo primeiro pagamento em até 7 dias.</p>
+ <p class="q">"Ninguém chega ao milhão pulando a Fase 1. Mas quase todo mundo tenta."</p>
+ <h2>O que acontece quando a Fase 1 vira rotina</h2>
+ <div class="luxe"><div><img src="/img/lx1.webp" loading="lazy" alt=""></div><div><img src="/img/lx2.webp" loading="lazy" alt=""></div><div><img src="/img/lx3.webp" loading="lazy" alt=""></div><div><img src="/img/lx4.webp" loading="lazy" alt=""></div></div>
+ <p>Primeiro é o fim do mês que para de doer. Depois é o jantar que você não pensa duas vezes. Depois a viagem. Depois a Fase 3, onde o dinheiro começa a trabalhar por você. Cada fase paga a próxima.</p>
+ <h2>Por dentro do app</h2>
+ <div class="hero" style="aspect-ratio:3/4"><img src="/img/app-mock.webp" loading="lazy" alt=""></div>
+ <p>Abre no seu celular, sem instalar nada pesado. Cada fase tem passos curtos, os prompts prontos, onde achar cliente e quanto cobrar. Você marca o que fez, ganha XP e o app libera a próxima etapa.</p>
+ <h2>Dentro da Rota do Milhão:</h2>
+ <div class="pile"><div class="it"><img src="/img/app-icon.webp" loading="lazy" alt=""><div><b>App Rota do Milhão (Fases 1 e 2 completas)</b><small>37 serviços com IA, clientes, preços, renda fixa em 60 dias</small></div><s>R$ 297</s></div>
+ ${BONUS.map(b=>`<div class="it"><img src="/img/${b[3]}.webp" loading="lazy" alt=""><div><b>${b[0]}</b><small>Resolve: ${b[1]}</small></div><s>${b[2]}</s></div>`).join('')}</div>
+ <p style="text-align:center"><s style="color:var(--mut)">Valor total: R$ 716</s><br><b class="serif" style="font-size:22px;color:var(--gold2)">Hoje, para o seu perfil: R$ 97</b></p>
+ <p>Com tudo isso, a única coisa que você precisa fazer é abrir o app e seguir a Fase 1.</p>
+ <h2>O preço de continuar igual</h2>
+ <p>Daqui a 12 meses, o celular que você já tem no bolso pode ter gerado ${BRL(S.lo*12)} a ${BRL(S.hi*12)}. Ou pode ter sido só mais um ano de rolar o feed vendo a vida dos outros.</p>
+ <div id="planos" class="plans">
+  <div class="plan best"><span class="rib">Liberado para o seu perfil</span><h3>Rota do Milhão Vitalício</h3><div class="pr"><s>R$ 297</s>R$ 97 <small>pagamento único</small></div><ul><li>Fases 1 e 2 completas + 7 bônus</li><li>Acesso para sempre, com todas as atualizações</li><li>Novos serviços com IA todo mês</li><li>Entra na hora pelo celular</li></ul><button class="btn pulse" onclick="buy('vitalicio')">QUERO O VITALÍCIO POR R$ 97</button></div>
+  <div class="plan"><h3>Rota do Milhão Mensal</h3><div class="pr">R$ 47 <small>por mês</small></div><ul><li>Fases 1 e 2 + bônus enquanto a assinatura estiver ativa</li><li>Cancela quando quiser</li></ul><button class="btn sec" onclick="mensal()">Prefiro o mensal</button></div>
+ </div>
+ <div class="gar"><span class="ic">🛡️</span><div><b>Garantia de 7 dias</b><br><span style="font-size:13.5px;color:#d6d3cb">Entra, faz a Fase 1 e, se não fizer sentido para você, pede o reembolso em 1 clique na Cakto. Sem pergunta.</span></div></div>
+ <h2>Perguntas frequentes</h2>
+ <div class="faq">
+ <details><summary>Preciso saber usar IA?</summary><p>Não. A Fase 1 começa do zero, com os prompts prontos para copiar e colar.</p></details>
+ <details><summary>Preciso investir dinheiro para começar?</summary><p>Não. Todas as ferramentas da Fase 1 são gratuitas. Você só precisa do celular.</p></details>
+ <details><summary>Funciona no meu celular?</summary><p>Sim, Android ou iPhone. O app abre no navegador e pode ser instalado na tela inicial.</p></details>
+ <details><summary>Em quanto tempo vejo resultado?</summary><p>A Fase 1 é desenhada para o primeiro pagamento em até 7 dias, com 30 minutos por dia. Depende de você fazer os passos.</p></details>
+ <details><summary>Como recebo o acesso?</summary><p>Na hora, no e-mail que você usar na compra. É só entrar no app com ele.</p></details>
+ </div>
+ <h2>Dois caminhos</h2>
+ <p>Fechar esta página e continuar como está. Ou entrar hoje por R$ 97, fazer a Fase 1 nesta semana e ver o primeiro pagamento cair no seu celular.</p>
+ <button class="btn pulse" onclick="goPlans()">QUERO MINHA ROTA POR R$ 97</button>
+ <p style="margin-top:18px;font-size:13.5px"><b>P.S.</b> Os 7 bônus (Mapa dos 37 Serviços, Guia do Primeiro Cliente em 48h, Tabela de Preços, Scripts, Biblioteca de IAs, Calculadora e Checklist) só vêm com o vitalício de hoje.</p>
+ <p class="tiny"><a href="/app-gratis" style="color:var(--mut)">Ainda não decidiu? Entre grátis no app</a></p>`}
+try{const st=JSON.parse(localStorage.getItem('rm_state')||'null');if(st&&st.i>=10){S.a=st.a;S.lo=st.lo;S.hi=st.hi;S.pot=st.pot;S.i=11}}catch(e){}
+render();
+</script>
+</body>
+</html>
