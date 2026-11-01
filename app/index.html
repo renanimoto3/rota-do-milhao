@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta name="theme-color" content="#09090b">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Rota do Milhão">
+<title>Rota do Milhão | App</title>
+<link rel="icon" href="/img/icon-192.png"><link rel="apple-touch-icon" href="/img/icon-192.png"><link rel="manifest" href="/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','845624231314387');fbq('track','PageView');</script>
+<script id="cfg" type="application/json">{"checkout":{"vitalicio":"CHECKOUT_VITALICIO","mensal":"CHECKOUT_MENSAL","up1":"CHECKOUT_UP1","up2":"CHECKOUT_UP2","clube":"CHECKOUT_CLUBE"}}</script>
+<style>
+:root{--bg:#09090b;--card:#141418;--line:#232329;--txt:#f4f1ea;--mut:#9a9aa3;--gold:#d4af37;--gold2:#f3dd8a;--gold3:#8f6f1c;--grad:linear-gradient(135deg,#f3dd8a,#d4af37 45%,#9c7a1f)}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;min-height:100dvh;line-height:1.45;padding-bottom:90px}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(800px 500px at 50% -10%,rgba(212,175,55,.14),transparent 60%);pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1;max-width:460px;margin:0 auto;padding:12px 16px 20px}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.15}h1{font-size:26px}h2{font-size:20px;margin:22px 0 10px}h3{font-size:17px}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.top{display:flex;align-items:center;justify-content:space-between;padding:4px 0 12px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:.14em;font-size:11px;text-transform:uppercase;color:var(--gold2)}.logo i{width:22px;height:22px;border-radius:7px;background:var(--grad);display:inline-block;box-shadow:0 0 18px rgba(212,175,55,.5)}
+.xp{font-size:11px;color:var(--gold2);border:1px solid var(--gold3);padding:5px 9px;border-radius:99px;font-weight:700}
+.banner{position:sticky;top:0;z-index:5;background:linear-gradient(135deg,#1a1405,#2a2108);border:1px solid var(--gold3);border-radius:12px;padding:10px 12px;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.banner b{color:var(--gold2)}.banner button{border:0;background:var(--grad);color:#1a1405;font-weight:800;font-size:12px;padding:8px 10px;border-radius:9px;white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+.card.gold{border-color:var(--gold3);background:linear-gradient(160deg,rgba(212,175,55,.14),rgba(20,20,24,.95))}
+.sub{color:var(--mut);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;border:0;border-radius:13px;background:var(--grad);color:#1a1405;font:inherit;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 10px 30px rgba(212,175,55,.3)}
+.btn.sec{background:transparent;color:var(--gold2);border:1px solid var(--gold3);box-shadow:none;font-weight:600}
+.btn.pulse{animation:p 1.8s infinite}@keyframes p{50%{box-shadow:0 10px 40px rgba(212,175,55,.65)}}
+.mod{display:flex;gap:12px;align-items:center;padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:#0d0d10;margin-bottom:9px;cursor:pointer}
+.mod .ic{width:46px;height:46px;border-radius:12px;background:#1b1b21;display:grid;place-items:center;font-size:22px;flex:none}
+.mod.free .ic{background:var(--grad);color:#1a1405}.mod b{display:block;font-size:14.5px}.mod small{color:var(--mut);font-size:12px;display:block}
+.mod .lk{margin-left:auto;color:var(--mut);font-size:18px}.mod.done .lk{color:#6ee7a0}
+.fase{margin-bottom:6px;display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);font-weight:800;margin-top:18px}
+.fase:after{content:"";flex:1;height:1px;background:var(--line)}
+.view{display:none}.view.on{display:block;animation:in .35s}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.bk{background:none;border:0;color:var(--gold2);font:inherit;font-weight:600;padding:6px 0 12px;cursor:pointer}
+.step{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.step .n{width:28px;height:28px;border-radius:9px;background:var(--grad);color:#1a1405;display:grid;place-items:center;font-weight:800;flex:none;font-size:13px}
+.step p{font-size:14.5px;color:#e6e1d5}
+.prompt{background:#0d0d10;border:1px dashed var(--gold3);border-radius:12px;padding:12px;font-size:13px;color:#d6d3cb;white-space:pre-wrap;margin:10px 0;position:relative}
+.prompt button{position:absolute;top:8px;right:8px;border:0;background:var(--grad);color:#1a1405;font-weight:800;font-size:11px;padding:6px 9px;border-radius:8px}
+.price{display:inline-block;background:rgba(212,175,55,.12);border:1px solid var(--gold3);color:var(--gold2);padding:4px 9px;border-radius:8px;font-weight:800;font-size:13px}
+.chk{display:flex;gap:10px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:#0d0d10;cursor:pointer;font-size:14px}
+.chk input{width:20px;height:20px;accent-color:var(--gold)}
+input[type=number],input[type=email],input[type=range]{width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);background:#0d0d10;color:var(--txt);font:inherit;font-size:16px;margin:6px 0 10px;outline:0}
+input[type=range]{padding:0;height:6px;-webkit-appearance:none;background:#2a2a31;border:0}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--grad)}
+.big{font-family:"Playfair Display",serif;font-size:32px;color:var(--gold2)}
+.pile .it{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}.pile img{width:56px;height:56px;border-radius:10px;object-fit:cover;background:#1b1b21}.pile b{display:block;font-size:14px}.pile small{display:block;color:var(--mut);font-size:12px}.pile s{color:var(--mut);font-size:12px}
+.plans{display:grid;gap:12px}.plan{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);position:relative}.plan.best{border-color:var(--gold);background:linear-gradient(160deg,rgba(212,175,55,.18),rgba(20,20,24,1))}
+.plan .rib{position:absolute;top:-10px;left:14px;background:var(--grad);color:#1a1405;font-size:10px;font-weight:800;letter-spacing:.1em;padding:4px 9px;border-radius:7px;text-transform:uppercase}
+.plan .pr{font-family:"Playfair Display",serif;font-size:36px;color:var(--gold2)}.plan .pr s{font-size:16px;color:var(--mut);margin-right:6px}.plan .pr small{font-size:13px;color:var(--mut);font-family:Inter}
+.ovl{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;padding:16px;z-index:9999}.ovl.on{display:flex}.ovl .m{background:var(--card);border:1px solid var(--gold3);border-radius:18px;padding:20px;max-width:420px;width:100%;max-height:88dvh;overflow:auto}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(9,9,11,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 0 calc(8px + env(safe-area-inset-bottom));z-index:6}
+.nav button{background:none;border:0;color:var(--mut);font:inherit;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 10px}.nav button span{font-size:20px}.nav button.on{color:var(--gold2)}
+.tiny{color:var(--mut);font-size:12px;text-align:center;margin-top:10px}
+.welcome{background:linear-gradient(135deg,rgba(212,175,55,.2),rgba(212,175,55,.05));border:1px solid var(--gold3);border-radius:14px;padding:12px 14px;font-size:14px;margin-bottom:12px;display:none}.welcome.on{display:block}
+.streak{display:flex;gap:6px;margin:8px 0}.streak i{flex:1;height:8px;border-radius:4px;background:#1c1c22}.streak i.on{background:var(--grad)}
+</style></head>
+<body>
+<div class="wrap">
+ <div class="top"><div class="logo"><i></i>Rota do Milhão</div><div class="xp" id="xp">0 XP</div></div>
+ <div class="banner" id="banner"><div>Modo gratuito. <b>Desbloqueie a rota completa por R$ 97</b></div><button onclick="pitch()">Desbloquear</button></div>
+ <div class="welcome" id="welcome">✅ Pronto, você está dentro. Comece pelo <b>Serviço 1</b> da Fase 1: dá para fazer hoje, em 30 minutos.</div>
+ <div id="v_home" class="view on"></div>
+ <div id="v_mod" class="view"></div>
+ <div id="v_calc" class="view"></div>
+ <div id="v_conta" class="view"></div>
+</div>
+<div class="ovl" id="ovl"><div class="m" id="ovlIn"></div></div>
+<div class="nav"><button class="on" onclick="nav('home',this)"><span>🗺️</span>Rota</button><button onclick="nav('calc',this)"><span>🧮</span>Calculadora</button><button onclick="nav('conta',this)"><span>👤</span>Conta</button></div>
+<script>
+const CFG=JSON.parse(document.getElementById('cfg').textContent);const $=s=>document.querySelector(s);
+const BRL=n=>'R$ '+Math.round(n).toLocaleString('pt-BR');
+let M={member:false,products:[]},P={};try{P=JSON.parse(localStorage.getItem('rm_prog')||'{}');M=JSON.parse(localStorage.getItem('rm_member')||'{"member":false,"products":[]}')}catch(e){}
+const save=()=>{try{localStorage.setItem('rm_prog',JSON.stringify(P))}catch(e){}};
+const track=()=>{try{return JSON.parse(localStorage.getItem('rm_track')||'{}')}catch(e){return{}}};
+function ck(url){const t=track();const q=new URLSearchParams();['src','utm_source','utm_medium','utm_campaign','utm_content','fbclid','sck'].forEach(k=>{if(t[k])q.set(k,t[k])});if(!q.get('utm_source'))q.set('utm_source',t.src||'direto');const em=localStorage.getItem('rm_email');if(em)q.set('email',em);return url+(url.includes('?')?'&':'?')+q.toString()}
+function buy(k){const url=ck(CFG.checkout[k]);try{fbq('track','InitiateCheckout',{content_name:'app-'+k},{eventID:'ic_'+Date.now()})}catch(e){}setTimeout(()=>location.href=url,200)}
+/* ===== CONTEÚDO ===== */
+const F1=[
+{id:'s1',free:true,ic:'✍️',t:'Serviço 1: Legendas para negócios locais',s:'Pacote de 10 legendas · R$ 80 a 150',price:'R$ 80 a 150 por pacote',intro:'Toda padaria, pizzaria, salão e loja de bairro posta no Instagram e não sabe o que escrever. Você entrega 10 legendas prontas em 20 minutos usando o prompt abaixo.',
+ steps:['Escolha 1 negócio que você já conhece (pode ser o da esquina). Abra o Instagram dele e anote: o que vende, o tom (sério ou descontraído) e 3 produtos principais.','Abra o ChatGPT (grátis) e cole o prompt abaixo preenchendo os colchetes.','Leia as 10 legendas. Troque 1 ou 2 palavras para ficar com a cara do negócio. Isso é o seu "toque humano" e é o que justifica o preço.','Monte a entrega em uma nota do celular ou no WhatsApp: título "10 legendas prontas para o seu Instagram" e as legendas numeradas.','Mande a mensagem de oferta (está na aula "Primeiro cliente em 48h") para 5 negócios hoje. 1 em 5 responde.'],
+ prompt:'Você é um copywriter especialista em negócios locais no Brasil. Escreva 10 legendas curtas para o Instagram de [TIPO DE NEGÓCIO] chamado [NOME], que vende [3 PRODUTOS PRINCIPAIS], em tom [DESCONTRAÍDO/ELEGANTE]. Regras: cada legenda com no máximo 3 linhas, 1 chamada para ação no fim (ex.: "chama no direct"), 2 a 3 emojis no máximo, 3 hashtags locais de [CIDADE/BAIRRO]. Varie: 3 de oferta, 3 de bastidor, 2 de prova social, 2 de curiosidade.'},
+{id:'s2',free:true,ic:'🎨',t:'Serviço 2: Artes para Instagram com IA',s:'3 artes · R$ 90 a 150',price:'R$ 90 a 150 por pacote',intro:'Feed bonito vende. Você gera as imagens no ChatGPT e monta o post no Canva gratuito, direto do celular.',
+ steps:['No ChatGPT, gere 3 imagens com o prompt abaixo (uma por produto). Peça "sem texto na imagem".','Abra o Canva (grátis no celular), modelo "Post Instagram 1080x1080". Suba a imagem gerada como fundo.','Coloque o nome do produto, o preço e o @ do negócio. Use só 1 fonte e as cores do logo dele.','Exporte as 3 em PNG. Mande como prévia com marca d\'água "AMOSTRA" para o cliente aprovar antes de pagar.','Entrega paga: as 3 sem marca d\'água + 1 bônus (story). Cobre 50% antes e 50% na entrega.'],
+ prompt:'Crie uma única imagem fotorrealista, quadrada, de [PRODUTO] de uma [TIPO DE NEGÓCIO], em um cenário [ELEGANTE/ACONCHEGANTE], iluminação de estúdio suave, fundo levemente desfocado, cores [COR PRINCIPAL DA MARCA]. Sem texto, sem logo, sem marca d\'água.'},
+{id:'s3',free:true,ic:'📣',t:'Serviço 3: Texto de anúncio que vende',s:'1 campanha pronta · R$ 100 a 150',price:'R$ 100 a 150 por campanha',intro:'Negócios locais impulsionam post sem saber escrever anúncio e perdem dinheiro. Você entrega o texto certo em 10 minutos.',
+ steps:['Pergunte ao dono: qual produto quer vender mais, qual a promoção e para quem (bairro, idade).','Cole o prompt abaixo no ChatGPT com essas respostas.','Escolha as 2 melhores versões e entregue com a instrução: "impulsione por 7 dias, R$ 10 por dia, público do bairro".','Depois de 7 dias, pergunte quantas mensagens chegaram. Esse número vira seu depoimento para o próximo cliente.'],
+ prompt:'Escreva 3 versões de texto de anúncio para Instagram/Facebook de [NEGÓCIO] em [CIDADE] vendendo [PRODUTO/PROMOÇÃO] para [PÚBLICO]. Estrutura: gancho de 1 linha que fala da dor ou do desejo, 2 linhas de oferta clara com preço, 1 linha de urgência real (prazo ou quantidade), chamada "Chama no WhatsApp". Máximo 5 linhas cada. Sem promessas exageradas.'},
+{id:'a1',free:true,ic:'🤝',t:'Aula: Primeiro cliente em 48h (de graça)',s:'onde achar e o que dizer',price:'',intro:'Cliente não aparece. Cliente é abordado. Em 48 horas, com 5 mensagens por dia, você fecha o primeiro.',
+ steps:['Onde achar: Instagram (busque "[sua cidade] + padaria/salão/pizzaria" e abra perfis com menos de 2 mil seguidores e posts fracos), grupos de Facebook do bairro, WhatsApp de comércio local e o Google Maps (negócios com poucas fotos).','O que dizer (copie): "Oi, [nome]! Vi o Instagram da [negócio] e tive uma ideia: fiz 3 legendas de amostra para vocês, de graça, para ver se gosta. Posso mandar aqui?"','Mande as 3 amostras feitas com o Serviço 1. Depois: "Se curtiu, faço o pacote com 10 por R$ 97, pronto em 24h. Fecho?"','Regra de ouro: 5 abordagens por dia, todo dia, por 7 dias. É matemática: 35 abordagens, 5 a 7 respondem, 1 a 2 fecham.','Recebeu? Pede um áudio ou print de "gostei". Esse é o seu primeiro depoimento. Guarde.'],prompt:''},
+{id:'s4',free:false,ic:'🔒',t:'Serviços 4 a 37 com IA',s:'tradução, currículos, cardápios, edição de vídeo…',price:''},
+{id:'b1',free:false,ic:'🗺️',t:'Mapa dos 37 Serviços',s:'bônus · o que fazer, para quem e quanto cobrar',price:''},
+{id:'b3',free:false,ic:'💰',t:'Tabela de Preços 2026',s:'bônus · nunca mais cobrar barato',price:''},
+{id:'b4',free:false,ic:'💬',t:'Scripts de Cobrança e Fechamento',s:'bônus · a mensagem que fecha e recebe',price:''}];
+const F2=[{id:'f2',free:false,ic:'🔁',t:'Fase 2: Renda Fixa em 60 dias',s:'3 a 5 clientes fixos, pacotes mensais',price:''},{id:'f2b',free:false,ic:'📱',t:'Social media para negócios locais',s:'pacote mensal R$ 400 a 900',price:''},{id:'f2c',free:false,ic:'💼',t:'Gestão de WhatsApp e produtos digitais',s:'renda que repete',price:''}];
+const F3=[{id:'f3',free:false,up:'up1',ic:'📈',t:'Fase 3: Multiplicação (Investidor de Bolso)',s:'reserva, renda fixa, FIIs e ações pelo celular',price:''},{id:'f4',free:false,up:'up1',ic:'🏆',t:'Fase 4: Rota do Milhão',s:'simulador do milhão, escalar em agência, múltiplas fontes',price:''},{id:'d7',free:false,up:'up2',ic:'🔥',t:'Desafio 7 Dias com IA',s:'missões diárias + scripts de prospecção',price:''},{id:'cl',free:false,up:'clube',ic:'👑',t:'Clube da Rota',s:'aula nova toda semana, novos serviços, comunidade',price:''}];
+const has=k=>M.member&&(k==='front'||M.products.includes(k));
+function unlocked(m){if(m.free)return true;if(m.up)return has(m.up);return has('front')}
+function home(){const st=(()=>{try{return JSON.parse(localStorage.getItem('rm_state')||'{}')}catch(e){return{}}})();
+ const row=m=>`<div class="mod ${m.free?'free':''} ${P[m.id]?'done':''}" onclick="${unlocked(m)?`open('${m.id}')`:`pitch('${m.up||'front'}')`}"><span class="ic">${unlocked(m)?m.ic:'🔒'}</span><div><b>${m.t}</b><small>${m.s}</small></div><span class="lk">${P[m.id]?'✓':unlocked(m)?'›':'🔒'}</span></div>`;
+ $('#v_home').innerHTML=`${st.lo?`<div class="card gold"><div class="sub">Seu potencial</div><div class="big">${BRL(st.lo)} a ${BRL(st.hi)}<span style="font-size:14px;color:var(--mut)">/mês</span></div><div class="sub" style="margin-top:4px">Fase de partida: <b style="color:var(--gold2)">Fase 1</b> · meta: 1º pagamento em 7 dias</div></div>`:''}
+ <div class="card"><b>Sua semana</b><div class="streak">${[0,1,2,3,4,5,6].map(i=>`<i class="${(P.streak||0)>i?'on':''}"></i>`).join('')}</div><div class="sub">Marque 1 serviço feito por dia para manter a rota viva.</div></div>
+ <div class="fase">Fase 1 · Primeiro dinheiro</div>${F1.map(row).join('')}
+ <div class="fase">Fase 2 · Renda fixa</div>${F2.map(row).join('')}
+ <div class="fase">Fases 3 e 4 · Multiplicação e milhão</div>${F3.map(row).join('')}
+ ${M.member?'':`<button class="btn pulse" style="margin-top:14px" onclick="pitch()">DESBLOQUEAR A ROTA COMPLETA · R$ 97</button>`}
+ <button class="btn sec" style="margin-top:10px" id="inst" onclick="install()">📲 Instalar o app no celular</button>`}
+function open(id){const m=[...F1,...F2,...F3].find(x=>x.id===id);if(!m||!unlocked(m))return pitch(m&&m.up);
+ $('#v_mod').innerHTML=`<button class="bk" onclick="nav('home')">‹ Voltar para a rota</button><h1>${m.t}</h1>${m.price?`<p style="margin:8px 0"><span class="price">${m.price}</span></p>`:''}<p class="sub" style="margin:8px 0 6px">${m.intro||''}</p>
+ ${(m.steps||[]).map((s,i)=>`<div class="step"><span class="n">${i+1}</span><p>${s}${i===1&&m.prompt?`<div class="prompt">${m.prompt}<button onclick="copy(this)">COPIAR</button></div>`:''}</p></div>`).join('')}
+ <button class="btn" style="margin-top:16px" onclick="done('${m.id}')">${P[m.id]?'✓ FEITO (+50 XP)':'MARCAR COMO FEITO (+50 XP)'}</button>
+ ${m.free&&!M.member?`<p class="tiny">Este é o módulo gratuito. Os outros 34 serviços e a Fase 2 estão no plano completo.</p>`:''}`;
+ document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));$('#v_mod').classList.add('on');window.scrollTo(0,0)}
+function copy(b){try{navigator.clipboard.writeText(b.parentNode.textContent.replace('COPIAR','').trim());b.textContent='COPIADO ✓'}catch(e){}}
+function done(id){if(!P[id]){P[id]=1;P.xp=(P.xp||0)+50;const d=new Date().toDateString();if(P.last!==d){P.streak=Math.min(7,(P.streak||0)+1);P.last=d}save()}$('#xp').textContent=(P.xp||0)+' XP';nav('home')}
+function calc(){const st=(()=>{try{return JSON.parse(localStorage.getItem('rm_state')||'{}')}catch(e){return{}}})();const base=st.hi||2500;
+ $('#v_calc').innerHTML=`<h1>Calculadora da Rota</h1><p class="sub">Mexa nos números e veja sua rota mudar.</p>
+ <div class="card"><label>Renda mensal pelo celular (Fase 2)</label><input type="range" id="c1" min="500" max="15000" step="100" value="${base}" oninput="rc()"><div class="big" id="c1v"></div>
+ <label>Quanto disso você guarda por mês (Fase 3)</label><input type="range" id="c2" min="10" max="80" step="5" value="40" oninput="rc()"><div style="color:var(--gold2);font-weight:800" id="c2v"></div>
+ <label>Rendimento ao ano (Fase 3, estimativa)</label><input type="range" id="c3" min="6" max="16" step="1" value="11" oninput="rc()"><div style="color:var(--gold2);font-weight:800" id="c3v"></div></div>
+ <div class="card gold"><div class="sub">Você chega ao primeiro milhão em</div><div class="big" id="cres"></div><div class="sub" id="cres2"></div></div>
+ ${M.member?'':`<div class="card"><b>Quer encurtar esse prazo?</b><p class="sub">A Fase 2 (renda fixa) e as Fases 3 e 4 estão no plano completo.</p><button class="btn" style="margin-top:10px" onclick="pitch()">Desbloquear por R$ 97</button></div>`}`;rc()}
+function rc(){const r=+$('#c1').value,p=+$('#c2').value,j=+$('#c3').value/100;const a=r*p/100;let s=0,m=0;while(s<1e6&&m<600){s=s*(1+j/12)+a;m++}$('#c1v').textContent=BRL(r)+'/mês';$('#c2v').textContent=p+'% · '+BRL(a)+' por mês';$('#c3v').textContent=(j*100)+'% ao ano';$('#cres').textContent=m>=600?'mais de 50 anos':Math.floor(m/12)+' anos e '+(m%12)+' meses';$('#cres2').textContent='Guardando '+BRL(a)+' por mês a partir da renda do celular.'}
+function conta(){const em=localStorage.getItem('rm_email')||'';$('#v_conta').innerHTML=`<h1>Sua conta</h1><div class="card"><div class="sub">E-mail</div><b>${em||'não informado'}</b><div class="sub" style="margin-top:6px">Status: <b style="color:var(--gold2)">${M.member?'Membro · rota completa':'Gratuito'}</b></div></div>
+ ${M.member?'':`<div class="card"><b>Já comprou?</b><p class="sub">Digite o e-mail usado na Cakto para liberar tudo.</p><input type="email" id="lem" placeholder="E-mail da compra" value="${em}"><button class="btn" onclick="login()">JÁ COMPREI, ENTRAR</button><p class="tiny" id="lmsg"></p></div>`}
+ <button class="btn sec" onclick="install()">📲 Instalar o app no celular</button>
+ <p class="tiny">Suporte: vanessaleekwon@gmail.com</p>`}
+async function login(){const em=$('#lem').value.trim();$('#lmsg').textContent='Verificando…';try{const r=await fetch('/api/me?email='+encodeURIComponent(em));const j=await r.json();if(j.member){M={member:true,products:j.products||[]};localStorage.setItem('rm_member',JSON.stringify(M));localStorage.setItem('rm_email',em);$('#banner').style.display='none';nav('home');return}$('#lmsg').textContent='Não achei uma compra com esse e-mail. Confira o e-mail do recibo da Cakto ou fale com o suporte.'}catch(e){$('#lmsg').textContent='Falha de conexão. Tente de novo.'}}
+const BON=[['Mapa dos 37 Serviços com IA','R$ 97','b1'],['Guia do Primeiro Cliente em 48h','R$ 67','b2'],['Tabela de Preços 2026','R$ 47','b3'],['Scripts de Cobrança e Fechamento','R$ 47','b4'],['Biblioteca de IAs Gratuitas','R$ 37','b5'],['Calculadora da Rota','R$ 97','b6'],['Checklist Diário com XP','R$ 27','b7']];
+function pitch(k){k=k||'front';const up={up1:['Fases 3 e 4: Investidor de Bolso + Rota do Milhão','O celular já gera. Agora o dinheiro trabalha: reserva, renda fixa, FIIs, ações e o simulador do milhão.','R$ 147','R$ 297'],up2:['Desafio 7 Dias com IA','Uma missão por dia, scripts de prospecção prontos e a meta do primeiro pagamento em 7 dias.','R$ 67','R$ 147'],clube:['Clube da Rota','Aula nova toda semana, novos serviços com IA, comunidade e suporte.','R$ 29,90/mês','R$ 59,90']}[k];
+ $('#ovlIn').innerHTML=up?`<h2 style="margin-top:0">${up[0]}</h2><p class="sub">${up[1]}</p><p style="margin:12px 0"><s style="color:var(--mut)">${up[3]}</s> <span class="big">${up[2]}</span></p><button class="btn pulse" onclick="buy('${k}')">DESBLOQUEAR AGORA</button><button class="btn sec" style="margin-top:8px" onclick="closeO()">Agora não</button>`:
+ `<h2 style="margin-top:0">Desbloqueie a rota completa</h2><p class="sub">Os 37 serviços, a Fase 2 (renda fixa em 60 dias) e os 7 bônus, no mesmo app, para sempre.</p>
+ <div class="pile" style="margin:12px 0">${BON.map(b=>`<div class="it"><img src="/img/${b[2]}.webp" alt=""><div><b>${b[0]}</b></div><s>${b[1]}</s></div>`).join('')}</div>
+ <p style="text-align:center"><s style="color:var(--mut)">R$ 716</s></p>
+ <div class="plans"><div class="plan best"><span class="rib">Liberado para o seu perfil</span><h3>Vitalício</h3><div class="pr"><s>R$ 297</s>R$ 97 <small>uma vez</small></div><button class="btn pulse" onclick="buy('vitalicio')">QUERO O VITALÍCIO POR R$ 97</button></div><div class="plan"><h3>Mensal</h3><div class="pr">R$ 47 <small>/mês</small></div><button class="btn sec" onclick="buy('mensal')">Prefiro o mensal</button></div></div>
+ <p class="tiny">7 dias de garantia. Entra na hora com o e-mail da compra.</p><button class="btn sec" style="margin-top:8px" onclick="closeO()">Continuar no gratuito</button>`;
+ $('#ovl').classList.add('on');document.body.style.overflow='hidden'}
+function closeO(){$('#ovl').classList.remove('on');document.body.style.overflow=''}
+$('#ovl').addEventListener('click',e=>{if(e.target.id==='ovl')closeO()});
+function nav(v,b){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v_'+v).classList.add('on');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('on'));if(b)b.classList.add('on');else document.querySelectorAll('.nav button')[{home:0,calc:1,conta:2}[v]].classList.add('on');({home,calc,conta})[v]&&({home,calc,conta})[v]();window.scrollTo(0,0)}
+let dp=null;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e});
+function install(){if(dp){dp.prompt();return}$('#ovlIn').innerHTML=`<h2 style="margin-top:0">Instalar no celular</h2><p class="sub"><b>iPhone:</b> toque em Compartilhar (quadrado com seta) e depois em "Adicionar à Tela de Início".<br><br><b>Android:</b> toque nos 3 pontos do navegador e em "Adicionar à tela inicial" ou "Instalar app".</p><button class="btn" onclick="closeO()">Entendi</button>`;$('#ovl').classList.add('on')}
+if(matchMedia('(display-mode: standalone)').matches)document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('#inst').forEach(b=>b.style.display='none')});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
+try{if(new URLSearchParams(location.search).get('welcome'))$('#welcome').classList.add('on');if(M.member)$('#banner').style.display='none'}catch(e){}
+$('#xp').textContent=(P.xp||0)+' XP';home();
+</script></body></html>
