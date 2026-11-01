@@ -32,15 +32,15 @@ ul{list-style:none;margin:14px 0}li{padding:7px 0 7px 26px;position:relative;fon
 <body><div class="wrap">
  <div class="back" id="back">🎉 <b>Antes de sair:</b> seu perfil foi aprovado para usar o app Rota do Milhão de graça. Só colocar o e-mail.</div>
  <div class="tag" style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:var(--grad);color:#1a1405;margin-bottom:10px">Parabéns, acesso liberado</div>
- <h1>Baixe o app <span class="gold">Rota do Milhão grátis</span> e comece a Fase 1 hoje</h1>
+ <h1>Seu acesso ao app <span class="gold">Rota do Milhão grátis</span> está liberado</h1>
  <p class="sub">Você já tem o seu número. Agora tem o app: os 3 primeiros serviços com IA, o passo a passo e a aula de onde achar o primeiro cliente, sem pagar nada.</p>
  <div class="pot" id="pot" style="display:none"><small>Seu potencial</small><b id="potVal"></b></div>
  <div class="mock"><img src="https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/app-mock.webp" alt=""></div>
- <div class="chips"><span class="chip">Acesso grátis</span><span class="chip">Sem senha</span><span class="chip">Instala no celular</span></div>
- <form onsubmit="return go(event)">
+ <div class="chips"><span class="chip">Acesso grátis</span><span class="chip">Sem senha</span><span class="chip">Abre na hora, instala se quiser</span></div>
+ <form onsubmit="return entrar(event)">
   <div class="err" id="err">Digite um e-mail válido para liberar o app.</div>
   <input type="email" id="em" placeholder="Seu melhor e-mail" autocomplete="email" required>
-  <button class="btn" type="submit" id="go">INSTALAR O APP GRÁTIS →</button>
+  <button class="btn" type="submit" id="btnGo">ACESSAR O APP GRÁTIS →</button>
  </form>
  <ul><li>Fase 1, módulo 1: 3 serviços com IA com prompts prontos</li><li>Aula: onde achar o primeiro cliente de graça</li><li>Calculadora com o seu resultado salvo</li></ul>
  <p class="tiny">O acesso grátis libera o começo da rota. As Fases 2, 3 e 4 e os bônus se desbloqueiam dentro do app.</p>
@@ -48,13 +48,13 @@ ul{list-style:none;margin:14px 0}li{padding:7px 0 7px 26px;position:relative;fon
 <script>
 const $=s=>document.querySelector(s);
 try{if(new URLSearchParams(location.search).get('from')==='back')$('#back').classList.add('on');const st=JSON.parse(localStorage.getItem('rm_state')||'null');if(st&&st.lo){$('#pot').style.display='block';$('#potVal').textContent='R$ '+st.lo.toLocaleString('pt-BR')+' a R$ '+st.hi.toLocaleString('pt-BR')+'/mês'}}catch(e){}
-function go(e){e.preventDefault();const em=$('#em').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){$('#err').style.display='block';return false}
- $('#go').textContent='ABRINDO O APP…';
+function entrar(e){e.preventDefault();const em=$('#em').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){$('#err').style.display='block';return false}
+ $('#btnGo').textContent='ABRINDO O APP…';
  let t={},st={};try{t=JSON.parse(localStorage.getItem('rm_track')||'{}');st=JSON.parse(localStorage.getItem('rm_state')||'{}');localStorage.setItem('rm_email',em)}catch(x){}
- const body={email:em,src:t.src||'direto',utm_content:t.utm_content||'',utm_campaign:t.utm_campaign||'',potencial:st.lo?st.lo+'-'+st.hi:'',fase:st.a&&st.a.ia==='muito'?2:1,dispositivo:(st.a&&st.a.cel)||'',ramo:(st.a&&st.a.ramo)||'',lid:localStorage.getItem('rm_lid')||'',page:location.href};
+ const body={email:em,src:t.src||'direto',utm_content:t.utm_content||'',utm_campaign:t.utm_campaign||'',potencial:st.lo?st.lo+'-'+st.hi:'',fase:st.a&&st.a.ia==='muito'?2:1,dispositivo:(st.a&&st.a.cel)||'',ramo:(st.a&&st.a.ramo)||'',lid:localStorage.getItem('rm_lid')||'',page:location.pathname,utm_term:t.utm_term||'',utm_medium:t.utm_medium||'',etapa:new URLSearchParams(location.search).get('from')==='back'?'back redirect':'link direto',idioma:'PT'};
  try{fbq('track','Lead',{content_name:'app-gratis'},{eventID:'lead_'+body.lid})}catch(x){}
  try{navigator.sendBeacon?navigator.sendBeacon('/api/lead',new Blob([JSON.stringify(body)],{type:'application/json'})):fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),keepalive:true})}catch(x){}
- setTimeout(()=>location.href='/app?welcome=1',350);return false}
+ setTimeout(()=>location.href='/app?welcome=1',400);return false}
 
 try{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js',{scope:'/app'}).catch(()=>{})}catch(e){}
 </script></body></html>
