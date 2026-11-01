@@ -55,4 +55,6 @@ function go(e){e.preventDefault();const em=$('#em').value.trim();if(!/^[^@\s]+@[
  try{fbq('track','Lead',{content_name:'app-gratis'},{eventID:'lead_'+body.lid})}catch(x){}
  try{navigator.sendBeacon?navigator.sendBeacon('/api/lead',new Blob([JSON.stringify(body)],{type:'application/json'})):fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),keepalive:true})}catch(x){}
  setTimeout(()=>location.href='/app?welcome=1',350);return false}
+
+try{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js',{scope:'/app'}).catch(()=>{})}catch(e){}
 </script></body></html>
