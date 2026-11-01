@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#09090b">
 <title>Rota do Milhão | Raio-X do seu potencial com o celular</title>
-<link rel="icon" href="/img/icon-192.png">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/icon-192.png"><link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,10 +19,10 @@ fbq('init','845624231314387');fbq('track','PageView');
 {
  "pixel":"845624231314387",
  "vsl":{"vturb":"", "pitchSeconds":230},
- "checkout":{"vitalicio":"CHECKOUT_VITALICIO","mensal":"CHECKOUT_MENSAL"},
+ "checkout":{"vitalicio":"https://pay.cakto.com.br/xmrc75g_1268307","mensal":"https://pay.cakto.com.br/z34bqv5_1268318"},
  "config":{"tempo":{"30":1,"60":2,"120":3.5,"240":6},"ia":{"nunca":0.7,"basico":1,"muito":1.3},
    "ramo":{"servicos":[80,150],"vender":[40,90],"conteudo":[300,900],"investir":[80,150]},
-   "diasUteis":22,"entregasPorHora":0.45}
+   "diasUteis":22,"entregasPorHora":0.6}
 }
 </script>
 <style>
@@ -146,7 +146,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;heigh
 <div class="fixcta" id="fixcta"><button class="btn pulse" onclick="goPlans()">QUERO MINHA ROTA POR R$ 97</button></div>
 <div class="ovl" id="ovl"><div class="m" id="ovlIn"></div></div>
 <script>
-const CFG=JSON.parse(document.getElementById('cfg').textContent);
+const IMG='https://cdn.jsdelivr.net/gh/renanimoto3/rota-do-milhao@main/img/';const CFG=JSON.parse(document.getElementById('cfg').textContent);
 const $=s=>document.querySelector(s);const S={i:0,a:{},pot:0,start:0,pitch:false};
 const BRL=n=>'R$ '+Math.round(n).toLocaleString('pt-BR');
 try{const u=new URLSearchParams(location.search);const keep={};['src','utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','sck'].forEach(k=>{if(u.get(k))keep[k]=u.get(k)});
@@ -161,7 +161,7 @@ const vib=()=>{try{navigator.vibrate&&navigator.vibrate(12)}catch(e){}}
 /* ===== TELAS ===== */
 const STEPS=[
 {id:'intro',pct:6,html:`
- <div class="hero"><img src="/img/01-intro.webp" alt="" fetchpriority="high"></div>
+ <div class="hero"><img src="${IMG}01-intro.webp" alt="" fetchpriority="high"></div>
  <h1>Descubra quanto você pode ganhar <span class="gold">por mês só com o celular</span></h1>
  <p class="sub">Um Raio-X de 3 minutos cruza seu tempo livre, seu celular e seu nível com IA e mostra a faixa real que está escapando por mês. Sem cadastro, sem cartão.</p>
  <div class="chips"><span class="chip"><b>3 min</b> para terminar</span><span class="chip"><b>Grátis</b> e sem cadastro</span><span class="chip">Funciona em <b>qualquer celular</b></span></div>
@@ -226,7 +226,7 @@ function buildResult(){const a=S.a,f=FASE[a.ia]||1,quer=+(a.quer||3000),ganha=+(
 function buildVsl(){const a=S.a;const v=CFG.vsl;S.start=Date.now();
  $('#vslBox').innerHTML=`<h2 style="margin-bottom:8px">Sua rota de <span class="gold">${BRL(S.lo)} a ${BRL(S.hi)}/mês</span> começa aqui</h2>
  <div class="snd">🔊 Toque no vídeo para ativar o som</div>
- <div class="vslbox" id="player">${v.vturb?v.vturb:`<video playsinline controls poster="/img/vsl-poster.webp" src="/video/vsl.mp4"></video>`}</div>
+ <div class="vslbox" id="player">${v.vturb?v.vturb:`<video playsinline controls poster="${IMG}vsl-poster.webp" src="/video/vsl.mp4"></video>`}</div>
  <div id="pitch" class="pitch"></div>`;
  try{fbq('track','ViewContent',{content_name:'vsl'})}catch(e){}
  buildPitch();
@@ -249,14 +249,14 @@ function buildPitch(){const a=S.a;$('#pitch').innerHTML=`
  <p>O que falta é a ordem certa. E é isso que a Rota do Milhão entrega: uma trilha em 4 fases que destrava uma de cada vez, começando pelo primeiro pagamento em até 7 dias.</p>
  <p class="q">"Ninguém chega ao milhão pulando a Fase 1. Mas quase todo mundo tenta."</p>
  <h2>O que acontece quando a Fase 1 vira rotina</h2>
- <div class="luxe"><div><img src="/img/lx1.webp" loading="lazy" alt=""></div><div><img src="/img/lx2.webp" loading="lazy" alt=""></div><div><img src="/img/lx3.webp" loading="lazy" alt=""></div><div><img src="/img/lx4.webp" loading="lazy" alt=""></div></div>
+ <div class="luxe"><div><img src="${IMG}lx1.webp" loading="lazy" alt=""></div><div><img src="${IMG}lx2.webp" loading="lazy" alt=""></div><div><img src="${IMG}lx3.webp" loading="lazy" alt=""></div><div><img src="${IMG}lx4.webp" loading="lazy" alt=""></div></div>
  <p>Primeiro é o fim do mês que para de doer. Depois é o jantar que você não pensa duas vezes. Depois a viagem. Depois a Fase 3, onde o dinheiro começa a trabalhar por você. Cada fase paga a próxima.</p>
  <h2>Por dentro do app</h2>
- <div class="hero" style="aspect-ratio:3/4"><img src="/img/app-mock.webp" loading="lazy" alt=""></div>
+ <div class="hero" style="aspect-ratio:3/4"><img src="${IMG}app-mock.webp" loading="lazy" alt=""></div>
  <p>Abre no seu celular, sem instalar nada pesado. Cada fase tem passos curtos, os prompts prontos, onde achar cliente e quanto cobrar. Você marca o que fez, ganha XP e o app libera a próxima etapa.</p>
  <h2>Dentro da Rota do Milhão:</h2>
- <div class="pile"><div class="it"><img src="/img/app-icon.webp" loading="lazy" alt=""><div><b>App Rota do Milhão (Fases 1 e 2 completas)</b><small>37 serviços com IA, clientes, preços, renda fixa em 60 dias</small></div><s>R$ 297</s></div>
- ${BONUS.map(b=>`<div class="it"><img src="/img/${b[3]}.webp" loading="lazy" alt=""><div><b>${b[0]}</b><small>Resolve: ${b[1]}</small></div><s>${b[2]}</s></div>`).join('')}</div>
+ <div class="pile"><div class="it"><img src="${IMG}app-icon.webp" loading="lazy" alt=""><div><b>App Rota do Milhão (Fases 1 e 2 completas)</b><small>37 serviços com IA, clientes, preços, renda fixa em 60 dias</small></div><s>R$ 297</s></div>
+ ${BONUS.map(b=>`<div class="it"><img src="${IMG}${b[3]}.webp" loading="lazy" alt=""><div><b>${b[0]}</b><small>Resolve: ${b[1]}</small></div><s>${b[2]}</s></div>`).join('')}</div>
  <p style="text-align:center"><s style="color:var(--mut)">Valor total: R$ 716</s><br><b class="serif" style="font-size:22px;color:var(--gold2)">Hoje, para o seu perfil: R$ 97</b></p>
  <p>Com tudo isso, a única coisa que você precisa fazer é abrir o app e seguir a Fase 1.</p>
  <h2>O preço de continuar igual</h2>
