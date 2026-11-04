@@ -18,8 +18,6 @@ module.exports = async (req, res) => {
   };
   const jobs = [];
   const post = (url, headers, body) => fetch(url, { method: 'POST', headers: headers, body: JSON.stringify(body) }).catch(() => null);
-  // Planilha "Leads Funis" (aba "Rota do Milhão"): mesmo Apps Script de todos os funis.
-  jobs.push(post('https://script.google.com/macros/s/AKfycbwRFK_-JHRYLzef6o1aWHGUoe_MHXUYcrV4sL56eGZvUrYNebQi1Q4lvZ-JjO4ZKdVU/exec', { 'Content-Type': 'text/plain;charset=utf-8' }, { produto: 'Rota do Milhão', idioma: 'PT', email: email, utm_source: b.utm_source || b.src || '', utm_medium: b.utm_medium || b.utm_term || '', utm_campaign: b.utm_campaign || '', utm_content: b.utm_content || '', etapa: b.etapa || 'link direto', pagina: b.page || '/app-gratis' }));
   if (process.env.SHEETS_WEBHOOK_URL) jobs.push(post(process.env.SHEETS_WEBHOOK_URL, { 'Content-Type': 'application/json' }, Object.assign({ type: 'lead' }, row)));
   if (process.env.BREVO_API_KEY) {
     const payload = { email: email, updateEnabled: true, attributes: { ORIGEM: row.origem, POTENCIAL: row.potencial, PRODUTO: 'Rota do Milhao' } };
